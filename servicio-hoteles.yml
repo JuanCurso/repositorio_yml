@@ -1,3 +1,4 @@
+spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3308/viajes?serverTimezone=UTC
@@ -10,4 +11,7 @@
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 server:
   port: 8000
-  #port: 10000
+eureka:
+  client:
+    service-url:
+      defaultzone: http://localhost:8761/eureka
